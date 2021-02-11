@@ -27,7 +27,14 @@ img {
     justify-content: center;
 }
 
-.shake{
+#answer {
+    font-family: 'Walter Turncoat', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.shake {
     animation: shake 1s;
 }
 

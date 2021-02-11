@@ -1,101 +1,106 @@
-let userQuestion = '';
- 
-
 const answer = () => {
-let randomNumber = Math.floor(Math.random() * 18);
-let eightBall = randomNumber;
+    // let userQuestion = '';
+    let randomNumber = Math.floor(Math.random() * 18);
+    let eightBall = randomNumber;
  
     switch(eightBall) {
     case 0:
-    eightBall = 'It is certain';
+    eightBall = 'it is certain';
     break;
 
     case 1:
-    eightBall = 'It is decidedly so';
+    eightBall = 'it is decidedly so';
     break;
 
     case 2:
-    eightBall = 'Without a doubt';
+    eightBall = 'without a doubt';
     break;
 
     case 3:
-    eightBall = 'Yes, definitely';
+    eightBall = 'yes, definitely';
     break;
 
     case 4:
-    eightBall = 'You may rely on it';
+    eightBall = 'you may rely on it';
     break;
 
     case 5:
-    eightBall = 'As I see it, yes';
+    eightBall = 'as i see it, yes';
     break; 
 
     case 6:
-    eightBall = 'Most likely';
+    eightBall = 'most likely';
     break; 
 
     case 7:
-    eightBall = 'Outlook good';
+    eightBall = 'outlook good';
     break;
 
     case 8:
-    eightBall = 'Signs point to yes';
+    eightBall = 'signs point to yes';
     break;
 
     case 9:
-    eightBall = 'Reply hazy';
+    eightBall = 'reply hazy';
     break;
 
     case 10:
-    eightBall = 'Try again';
+    eightBall = 'try again';
     break;
 
     case 11:
-    eightBall = 'Ask again later';
+    eightBall = 'ask again later';
     break;
 
     case 12:
-    eightBall = 'Better not tell you now';
+    eightBall = 'better not tell you now';
     break;
 
     case 13:
-    eightBall = 'Cannot predict now';
+    eightBall = 'cannot predict now';
     break;
 
     case 14:
-    eightBall = 'Concentrate and ask again';
+    eightBall = 'concentrate and ask again';
     break;
 
     case 15:
-    eightBall = "Don't count on it";
+    eightBall = "don't count on it";
     break;
 
     case 16:
-    eightBall = 'My reply is no';
+    eightBall = 'my reply is no';
     break;
 
     case 17:
-    eightBall = 'My sources say no';
+    eightBall = 'my sources say no';
     break;
 
     case 18:
-    eightBall = 'Outlook not so good';
+    eightBall = 'outlook not so good';
     break;
 
     case 19:
-    eightBall = 'Very doubtful';
+    eightBall = 'very doubtful';
     break;
     }
+
+    // displaying answer. call when during shake(); 
+    let displayAnswer = document.getElementById("answer");
+    let message = document.createElement("p");
+    message.innerHTML = eightBall;
+    displayAnswer.appendChild(message); 
 }
  
 const shake = () => {
-    var ball = document.getElementById("8ball")
+    let ball = document.getElementById("8ball")
     
     // add CSS class to 8ball
     ball.classList.add("shake");
 
     // remove call from ball so it will shake from each click 
     setTimeout(function(){ ball.classList.remove("shake"); }, 1500);
+
+    answer();
 }
 
-answer();

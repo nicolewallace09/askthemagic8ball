@@ -12,16 +12,20 @@
 <body>
     <div id="container">
         <div class="row">
-            <div class="col-12">
+            <div class="title-container col-12">
                 <h1 class="title">ask me anything and click to shake the magic 8 ball</h1>
             </div>
 
             <div class="input-container col-12">
-                <input type="text" id="question" />
+                <input name="question-input" type="text" id="question" />
             </div>
          
             <div class="image-container col-12" id="eight-ball">
                 <img src="assets/8ball.png" id="8ball" onClick="shake()"></img>
+            </div>
+
+            <div class="answer-container col-12">
+                <p id="answer"></p>
             </div>
             
         </div>
