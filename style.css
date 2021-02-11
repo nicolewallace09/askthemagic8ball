@@ -12,9 +12,10 @@ body {
     margin: 150px auto;
 }
 
-.input-container {
+.form-control {
     display: flex;
     justify-content: center;
+    margin: auto 500px;
 }
 
 img {
@@ -56,6 +57,10 @@ img {
     img {
         width: 25rem;
         height: 25rem;
+    }
+
+    #container {
+        margin: 50px auto;
     }
 }
 
