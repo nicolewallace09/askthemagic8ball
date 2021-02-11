@@ -88,12 +88,21 @@ const answer = () => {
     // displaying answer. call when during shake(); 
     let displayAnswer = document.getElementById("answer");
     let message = document.createElement("p");
+    message.setAttribute('id', 'answerText')
     message.innerHTML = eightBall;
     displayAnswer.appendChild(message); 
 }
+
+
  
 const shake = () => {
     let ball = document.getElementById("8ball")
+
+    // remove if there is a previous answer
+    let previousAnswer = document.getElementById("answerText")
+    if(previousAnswer != null){
+        previousAnswer.parentNode.removeChild(previousAnswer);
+    }
     
     // add CSS class to 8ball
     ball.classList.add("shake");
