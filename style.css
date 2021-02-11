@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+#container {
+    margin: 150px auto;
+}
+
 .input-container {
     display: flex;
     justify-content: center;
