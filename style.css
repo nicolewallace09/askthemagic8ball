@@ -8,14 +8,18 @@ body {
     text-align: center;
 }
 
+.input-form {
+    font-family: 'Walter Turncoat', cursive;
+    width: 40%;
+}
+
 #container {
     margin: 150px auto;
 }
 
-.form-control {
+.input-container {
     display: flex;
     justify-content: center;
-    margin: 20px 610px;
 }
 
 img {
@@ -76,10 +80,9 @@ img {
         font-size: 1.5rem;
     }
 
-    .form-control {
-        display: flex;
-        justify-content: center;
-        margin: 20px 110px;
+    .input-form {
+        font-family: 'Walter Turncoat', cursive;
+        width: 80%;
     }
 }
 
